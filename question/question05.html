@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question05.html</title>
+</head>
+<body>
+    <script>
+        
+        let coffee=parseInt(prompt("커피값"));        
+        document.write( "<h2> 커피값 : " +coffee+"</h2>");
+        
+        let itemcount1=parseInt(prompt("구매카운트"));
+       
+        
+        document.write( "<h2> 구매카운트 : " +itemcount1+"</h2>");
+        total1=coffee*itemcount1
+        document.write("<h2> 물건의 전체 가격 : "+total1+ "</h2>");
+        if(total1>=15000){
+            document.write("<h2 style=color:blue;> 할인해 드릴게요</h2>")
+
+        }else{
+            document.write("<h2 style=color:red;>정가로 내셔야해요</h2>")
+        }
+    </script>
+</body>
+</html>

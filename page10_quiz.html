@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page10_quiz.html</title>
+</head>
+<body>
+    교안 34p 1,2,3,4번 문제를 풀어보기 
+    <script>
+        
+        let item1=parseInt(prompt("물건의 가격"));        
+        document.write( "<h2> 1. 물건하나당 가격이 : " +item1+"</h2>");
+        
+        let itemcount1=parseInt(prompt("물건의 개수"));
+       
+        
+        document.write( "<h2> 물건의 개수 : " +itemcount1+"</h2>");
+        total1=item1*itemcount1
+        document.write("<h2> 물건의 전체 가격 : "+total1+ "</h2>");
+        
+    </script>
+    <hr>
+    <script>
+
+        item2=1000;
+        itemprice1=200;
+        total2=item2/itemprice1;
+        document.write("<h2> 2. 전체 구매 금액이 : "+item2+ "</h2>");
+        document.write("<h2> 물건하나당 가격이  : "+itemprice1+ "</h2>");
+        document.write("<h2> 물건의 개수는? : "+total2+ "</h2>");
+   
+    </script>
+    <hr>
+    <script>
+        apple=2000;
+        pear=3000;
+
+        
+        document.write("<h2> 3. 사과의 가격이  : "+apple+ "</h2>");
+        document.write("<h2>    배의 가격이   : "+pear+ "</h2>");
+        document.write("<h2> 사과 구매 개수 3, 배 구매 개수 2   사과 구매 금액이 배 구매 금액보다 높을까? : "+(apple*3>pear*2)+ "</h2>");
+       
+
+    </script>
+      <hr>
+      <script>
+          yesterdayT=25;
+          todayT=10;        
+          total3= yesterdayT+todayT;2
+          averageT=total3/2;
+          document.write("<h2> 4. 어제 온도   : "+yesterdayT+ "도, 오늘 온도"+todayT+"도,</h2>");
+          document.write("<h2> 어제와 오늘 온도의 평균은? : "+averageT+"</h2>");
+         
+  
+      </script>
+
+</body>
+</html>
+
+<!-- page10_quiz.html-->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page11_quiz.html</title>
+</head>
+<body>
+    <script>
+        document.write("<h1> 적정체중을 구하는 프로그램")
+        document.write("<h1> [실습] 이름, 키, 몸무게를 입력받아서 적정 체중을 구한뒤 비교하여 적정 체중을 구한 뒤 비교하여 적정 체중을 10% 초과하면 '과체중'")
+       document.write("<h1 style=color:red;> " +"적정체중 =(신장-100)0.9를 적정체중으로 봅니다.");     
+    </script>
+    <hr>
+    <script>
+        let name= prompt("이름");
+        let height= parseInt(prompt("키"));
+        let weigth= parseInt(prompt("몸무게"));
+        let average = (height-100) * 0.9;
+        document.write("<h1> 이름:"+ name+ "님</h1>");
+        document.write("<h1> 키:"+ height+ "cm</h1>");
+        document.write("<h1> 몸무게:"+ weigth+ "kg</h1>");
+        document.write("<h1> 적정 체중:"+ average+ "kg</h1>");
+         
+    if(weigth>(average * 1.1)) {
+      document.write("<h1 style=color:red;>" + "당신은 과체중입니다." + "</h1>");
+    } else if(weigth<(average * 0.9)) {
+      document.write("<h1 style=color:blue;>" + "당신은 저체중입니다." + "</h1>");
+    } else {
+      document.write("<h1 style=color:green;>" + "당신은 적정체중입니다." + "</h1>");
+    }
+    </script>
+</body>
+</html>
+<!--page11_quiz.html-->

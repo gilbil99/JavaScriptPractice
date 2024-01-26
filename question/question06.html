@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let food=(prompt("음식"));
+        document.write("<h2> 음식:"+food+"</h2>");
+
+        let price=parseInt(prompt("가격"));
+        document.write("<h2> 가격:" +price+"</h2>");
+        
+        if((food=="커피") && (price<5000)){
+            document.write("<h2 style=color:blue;>내가 살게요 ^^</h2>");
+        }else{
+            document.write("<h2 style=font-size:300px;1> 네가 사 </h2>");
+        }
+    </script>
+</body>
+</html>

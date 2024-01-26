@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question02.html</title>
+</head>
+<body>
+   
+    <script>
+        //prompt이용해서 "어느 검색 사이트를 주로 이용하세요?"
+        //네이버=>네이버로 이동, 구글==> 구글로 이동, 다음==> 다음으로 이동,
+        //그외 다른 사이트라면?
+        //현재 문서를 보여주되 "그런 사이트는 안가요~"를 출력하세요
+        let search=prompt('어느사이트를 주로 이용하세요?');
+        let url;
+        if(search=='네이버'){
+            url="http:///www.naver.com";
+        }
+         else if(search=='다음'){
+            url="http://daum.net";
+        }else{
+           
+             url="http://google.com";
+
+
+        }
+        window.location.href=url;
+    </script>
+
+</body>
+</html>

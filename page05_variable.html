@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page05_variable.html</title>
+</head>
+<body>
+    <h1>variable- var, let, const</h1>
+    
+    <hr>
+    <script>
+        var name='홍길동';
+        var age=20;//초기화
+        age=21;//값 재할당
+        var tel='01011112222';
+        document.write('tel:', tel,"<br>");
+        var tel='0256174233';
+        document.write('tel:', tel,"<br>");
+
+        let phone='01011112222';
+        document.write('phone:',phone,"<br>");
+        // let phone='010256783214'// 재선언 불가능, 재할당은 가능
+        phone='010323232323';
+        document.write('phone:', phone,"<br>");
+        const PI=3.14; //재선언 불가능,재할당 불가능
+        document.write(PI,"<br>");
+        //PI=5.78; [x]
+        document.write(PI,"<br>");
+
+    </script>
+</body>
+</html>
+<!--page05_variable.html-->

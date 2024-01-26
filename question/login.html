@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+   input{
+    
+    padding: 5px;
+   }
+
+   
+</style>
+<script>
+    $(document).ready(function(){
+        $('#login').click(function(){
+            let id= $('#id').val();
+            let pw= $('#pw').val();
+            if ((id=="root") && (pw=="1234")){
+                $('#result').html('<h2 style="color: green;">root님 환영합니다~~</h2>');
+             
+
+            }else{
+                $('#result').html('<h2 style="color: orange;">실패!! 아이디 또는 비밀번호가 틀려요</h2>');
+            }
+        });
+    })
+    </script>
+</head>
+<body>
+   
+    <h2 style="font-size: 50px; ">로그인</h2>
+    아이디: <input type="text" name="id"id="id"><br>
+    비밀번호: <input type="password" name="pw" id="pw" ><br>
+    <button id="login">Login</button>
+    <hr color=red>
+    <div id="result">
+      </div>
+</body>
+</html>
+<!-- login.html -->
